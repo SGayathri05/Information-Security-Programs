@@ -32,3 +32,8 @@ def route_cipher_decrypt(ciphertext, rows, cols):
       plaintext += grid[r][c]
 
   return plaintext.strip()  
+  
+message = input("Enter the message: ")
+ciphertext = route_cipher(message, 3, 4)
+print("Cipher text is: ", ciphertext)
+print("Plain text is: ", route_cipher_decrypt(ciphertext,3,4))
